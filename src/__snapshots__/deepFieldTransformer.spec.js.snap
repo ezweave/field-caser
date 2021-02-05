@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`deepFieldTransformer converts nested field names to using a converter 1`] = `
+Object {
+  "DETAILS": Object {
+    "CARS": Object {
+      "0": Object {
+        "BRAND": "Pontiac",
+        "MODEL": "Aztek",
+        "YEAR_OF_MANUFACTURE": "2004",
+      },
+      "1": Object {
+        "BRAND": "Saturn",
+        "MODEL": "Vue",
+        "YEAR_OF_MANUFACTURE": "2004",
+      },
+    },
+    "DATE_OF_BIRTH": "1/1/1970",
+  },
+  "FIRST_NAME": "Joe",
+  "LAST_NAME": "Consumer",
+}
+`;

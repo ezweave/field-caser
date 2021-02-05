@@ -1,0 +1,16 @@
+{
+	"firstName": "Joe",
+	"lastName": "Consumer",
+	"details": {
+		"dateOfBirth": "1/1/1970",
+		"cars": [{
+			"brand": "Pontiac",
+			"model": "Aztek",
+			"yearOfManufacture": "2004"
+		},{
+			"brand": "Saturn",
+			"model": "Vue",
+			"yearOfManufacture": "2004"
+		}]
+	}
+}
