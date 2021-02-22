@@ -1,6 +1,6 @@
 import { transformAllFieldNamesToCamel } from 'field-caser'
 
-const kebabCaseObject = {
+const snakeUser = {
   first_name: 'Homer',
   last_name: 'Simpson'
 }
@@ -10,6 +10,6 @@ interface User  {
   lastName: string
 }
 
-const user: User = <User>transformAllFieldNamesToCamel(kebabCaseObject)
+const camelUser: User = <User>transformAllFieldNamesToCamel(snakeUser)
 
-console.warn('User is now', user)
+console.warn('User was', snakeUser, 'User is now', camelUser)

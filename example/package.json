@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "run.example": "ts-node index.ts"
+    "example": "ts-node index.ts"
   },
   "dependencies": {
     "field-caser": "file:../"

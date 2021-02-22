@@ -9,8 +9,8 @@
   "scripts": {
     "test": "jest",
     "build": "yarn lint && tsc",
-    "lint": "eslint './src/**/*.ts'",
-    "lint.fix": "eslint --fix './src/**/*.ts'", 
+    "lint": "eslint './lib/**/*.ts'",
+    "lint.fix": "eslint --fix './lib/**/*.ts'", 
     "prepublish": "yarn run build"
   },
   "keywords": [
