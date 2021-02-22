@@ -16,6 +16,8 @@
 I found it annoying to map JSON from older (or opinionated) REST endpoints that use snake case to camel case.  This is often the case when using TypeScript in the Node.js and browser world, _especially_ if you're typing all of 
 your outputs.  While other frameworks add this feature, this is _naked_ for you to use at your discretion.
 
+__And yes, this is a deep conversion.__ It will recurse and find all of the child objects and arrays (naive, depth first).
+
 [Top](#table-of-contents)
 
 ## Installation
