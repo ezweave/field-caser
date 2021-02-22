@@ -1,4 +1,4 @@
 node_modules
-.babelrc
-.flowconfig
+dist
 .idea
+example/node_modules
