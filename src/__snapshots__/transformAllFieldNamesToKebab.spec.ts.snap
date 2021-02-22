@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`transformAllFieldNamesToKebab transforms camel field names to kebab 1`] = `
+Object {
+  "default": Object {
+    "details": Object {
+      "cars": Object {
+        "0": Object {
+          "brand": "Pontiac",
+          "model": "Aztek",
+          "year-of-manufacture": "2004",
+        },
+        "1": Object {
+          "brand": "Saturn",
+          "model": "Vue",
+          "year-of-manufacture": "2004",
+        },
+      },
+      "date-of-birth": "1/1/1970",
+    },
+    "first-name": "Joe",
+    "last-name": "Consumer",
+  },
+  "details": Object {
+    "cars": Object {
+      "0": Object {
+        "brand": "Pontiac",
+        "model": "Aztek",
+        "year-of-manufacture": "2004",
+      },
+      "1": Object {
+        "brand": "Saturn",
+        "model": "Vue",
+        "year-of-manufacture": "2004",
+      },
+    },
+    "date-of-birth": "1/1/1970",
+  },
+  "first-name": "Joe",
+  "last-name": "Consumer",
+}
+`;
+
+exports[`transformAllFieldNamesToKebab transforms snake field names to kebab 1`] = `
+Object {
+  "default": Object {
+    "details": Object {
+      "cars": Object {
+        "0": Object {
+          "brand": "Pontiac",
+          "model": "Aztek",
+          "year-of-manufacture": "2004",
+        },
+        "1": Object {
+          "brand": "Saturn",
+          "model": "Vue",
+          "year-of-manufacture": "2004",
+        },
+      },
+      "date-of-birth": "1/1/1970",
+    },
+    "first-name": "Joe",
+    "last-name": "Consumer",
+  },
+  "details": Object {
+    "cars": Object {
+      "0": Object {
+        "brand": "Pontiac",
+        "model": "Aztek",
+        "year-of-manufacture": "2004",
+      },
+      "1": Object {
+        "brand": "Saturn",
+        "model": "Vue",
+        "year-of-manufacture": "2004",
+      },
+    },
+    "date-of-birth": "1/1/1970",
+  },
+  "first-name": "Joe",
+  "last-name": "Consumer",
+}
+`;
