@@ -1,4 +1,4 @@
-import { transformAllFieldNamesToSnake } from 'field-caser'
+import { transformAllFieldNamesToCamel } from 'field-caser'
 
 const kebabCaseObject = {
   first_name: 'Homer',
@@ -10,6 +10,6 @@ interface User  {
   lastName: string
 }
 
-const user: User = <User>transformAllFieldNamesToSnake(kebabCaseObject)
+const user: User = <User>transformAllFieldNamesToCamel(kebabCaseObject)
 
 console.warn('User is now', user)

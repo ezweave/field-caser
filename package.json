@@ -5,7 +5,7 @@
   "author": "Matt Weaver <ezweave@gmail.com>",
   "license": "MIT",
   "description": "Deep convert Javascript field names casing styles.",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "jest",
     "build": "yarn lint && tsc",
