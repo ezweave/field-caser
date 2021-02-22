@@ -10,9 +10,6 @@
   },
   "lib": ["es2015"],
   "include" : [
-    "./src"
-  ],
-  "exclude": [
-    "./example"
+    "./index.ts"
   ]
 }

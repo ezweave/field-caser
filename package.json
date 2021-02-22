@@ -8,8 +8,9 @@
   "main": "src/index.js",
   "scripts": {
     "test": "jest",
-    "build": "tsc",
-    "lint": "eslint --fix './src/**/*.ts'",
+    "build": "yarn lint && tsc",
+    "lint": "eslint './src/**/*.ts'",
+    "lint.fix": "eslint --fix './src/**/*.ts'", 
     "prepublish": "yarn run build"
   },
   "keywords": [

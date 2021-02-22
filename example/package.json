@@ -1,0 +1,21 @@
+{
+  "name": "example-field-caser",
+  "version": "1.0.0",
+  "description": "Using field-caser in a semi-real setting",
+  "main": "index.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "run.example": "ts-node index.ts"
+  },
+  "dependencies": {
+    "field-caser": "file:../"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.15.2",
+    "@typescript-eslint/parser": "^4.15.2",
+    "eslint": "^7.20.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.5"
+  }
+}

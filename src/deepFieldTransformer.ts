@@ -9,14 +9,10 @@ import { isArray, isObject, map, partialRight, reduce } from 'lodash'
 
 const reduceFP = (func, collector) => partialRight(reduce, func, collector)
 
-export interface StringTransformer {
-  (string): string
-}
+export type StringTransformer = (string) => string
 
-export interface DeepFieldTransformer<T, O> {
-  (stringTransformer: StringTransformer): (T) => O
-}
+export type DeepFieldTransformer = <T>(stringTransformer: StringTransformer) => (source: unknown) => T
 
-export const deepFieldTransformer: DeepFieldTransformer<{}, {}> = stringTransformer => reduceFP((result, value, key) => ({ ...result,
+export const deepFieldTransformer: DeepFieldTransformer = stringTransformer => reduceFP((result, value, key) => ({ ...result,
   [stringTransformer(key)]: isObject(value) ? deepFieldTransformer(stringTransformer)(value) : isArray(value) ? map(value, deepFieldTransformer(stringTransformer)) : value
 }), {})
