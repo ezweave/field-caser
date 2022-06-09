@@ -13,6 +13,15 @@ export type StringTransformer = (string) => string
 
 export type DeepFieldTransformer = <T>(stringTransformer: StringTransformer) => (source: unknown) => T
 
-export const deepFieldTransformer: DeepFieldTransformer = stringTransformer => reduceFP((result, value, key) => ({ ...result,
-  [stringTransformer(key)]: isObject(value) ? deepFieldTransformer(stringTransformer)(value) : isArray(value) ? map(value, deepFieldTransformer(stringTransformer)) : value
-}), {})
+export const deepFieldTransformer: DeepFieldTransformer = (stringTransformer) =>
+  reduceFP(
+    (result, value, key) => ({
+      ...result,
+      [stringTransformer(key)]: isArray(value)
+        ? map(value, (entry) => deepFieldTransformer(stringTransformer)(entry))
+        : isObject(value)
+        ? deepFieldTransformer(stringTransformer)(value)
+        : value,
+    }),
+    {}
+  )
