@@ -40,3 +40,16 @@ Object {
   "LAST_NAME": "Consumer",
 }
 `;
+
+exports[`deepFieldTransformer handles arrays 1`] = `
+Object {
+  "films": Array [
+    "https://swapi.dev/api/films/1/",
+    "https://swapi.dev/api/films/5/",
+    "https://swapi.dev/api/films/6/",
+  ],
+  "species": Array [],
+  "starships": Array [],
+  "vehicles": Array [],
+}
+`;

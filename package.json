@@ -1,6 +1,6 @@
 {
   "name": "field-caser",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "repository": "git@github.com:ezweave/field-caser.git",
   "author": "Matt Weaver <ezweave@gmail.com>",
   "license": "MIT",
@@ -10,7 +10,7 @@
     "test": "jest",
     "build": "yarn lint && tsc",
     "lint": "eslint './lib/**/*.ts'",
-    "lint.fix": "eslint --fix './lib/**/*.ts'", 
+    "lint.fix": "eslint --fix './lib/**/*.ts'",
     "prepublish": "yarn run build"
   },
   "keywords": [
